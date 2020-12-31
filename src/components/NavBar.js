@@ -35,7 +35,6 @@ function NavBar() {
            <div className="navbar-container">
               <Link to='/' className="navbar-logo" onClick={closeMobileMenu}>
              Rachel Williams
-              
               </Link> 
               {/* calls function to handle the click */}
               <div className='menu-icon' onClick={handleClick}>
@@ -84,11 +83,7 @@ function NavBar() {
                 </li>
                
               </ul>
-              
-
-              
-              {/* if true, return the button component */}
-              {/* {button && <Button buttonStyle='btn--outline'>BUTTON 1</Button>} */}
+            
            </div>
 
         </nav>
