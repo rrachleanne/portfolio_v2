@@ -16,11 +16,9 @@ function NavBar() {
 
     // function that displays the button on screensize
     const showButton = () => {
-        if (window.innerWidth <= 960) {
-            setButton(false);
-        } else {
-            setButton(true)
-        }
+        
+        setButton(true)
+        
     };
 
     // hook to fix reload issue of button
@@ -36,13 +34,13 @@ function NavBar() {
         <nav className="navbar">
            <div className="navbar-container">
               <Link to='/' className="navbar-logo" onClick={closeMobileMenu}>
-              R. <i class="fas fa-laugh-wink"></i>
+             Rachel Williams
               
               </Link> 
               {/* calls function to handle the click */}
               <div className='menu-icon' onClick={handleClick}>
                   {/* if icon click > show menu > if click again return to bars */}
-                  <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+                      <i className={click ?  'fas fa-times' :  'fas fa-bars'} />
               </div>
               {/* if else show menu */}
               <ul className={click ? 'nav-menu active' : 'nav-menu'}>
@@ -67,9 +65,30 @@ function NavBar() {
                         Contact
                     </Link>
                 </li>
+                <li className='social-item'>
+                <Link to="https://www.facebook.com/rachelleanne.williams" className='social-links' onClick={closeMobileMenu}>
+                <i class='fab fa-facebook-f' />
+                    </Link>
+                    <Link to="https://www.instagram.com/rrach_leanne/" className='social-links' onClick={closeMobileMenu}>
+                <i class='fab fa-instagram' />
+                    </Link>
+                    <Link to="https://twitter.com/rrach_leanne" className='social-links' onClick={closeMobileMenu}>
+                <i class='fab fa-twitter' />
+                    </Link>
+                    <Link to="https://www.linkedin.com/in/rachelleannewilliams/" className='social-links' onClick={closeMobileMenu}>
+                <i class='fab fa-linkedin' />
+                    </Link>
+                    <Link to="/contact" className='social-links' onClick={closeMobileMenu}>
+                <i class='fab fa-github' />
+                    </Link>
+                </li>
+               
               </ul>
+              
+
+              
               {/* if true, return the button component */}
-              {button && <Button buttonStyle='btn--outline'>BUTTON 1</Button>}
+              {/* {button && <Button buttonStyle='btn--outline'>BUTTON 1</Button>} */}
            </div>
 
         </nav>

@@ -7,8 +7,11 @@ function HeroSection() {
     return (
         <div className='hero-container'>
             <video src="/videos/video-5.mp4" autoPlay loop muted />
-            <h1>Header Here</h1>
-            <p>stuff to be entered here</p>
+        <div className="slider">
+            <h1>Hi, i'm Rachel Williams!</h1>
+            <h2>A Junior Full Stack Developer</h2>
+
+          
             <div className="hero-btns">
                 <Button 
                 className='btns' 
@@ -23,6 +26,7 @@ function HeroSection() {
                 buttonSize='btn--large'>
                     Button Name 2
                 </Button>
+            </div>
             </div>
         </div>
     )

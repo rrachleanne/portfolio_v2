@@ -38,7 +38,7 @@ function Footer() {
               <i class='fab fa-twitter' />
             </Link>
             <Link
-              class='social-icon-link twitter'
+              class='social-icon-link linkedin'
               to='https://www.linkedin.com/in/rachelleannewilliams/'
               target='_blank'
               aria-label='LinkedIn'

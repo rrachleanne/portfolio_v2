@@ -1,78 +1,134 @@
 .navbar {
-    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    background: #fff;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 15px;
+    color: black;
     position: sticky;
     top: 0;
     z-index: 999;
   }
+
   
   .navbar-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    height: 50px;
     max-width: 1500px;
   }
   
   .navbar-logo {
-    color: #fff;
+    color: #000;
     justify-self: start;
-    margin-left: 20px;
+    margin-left: 10px;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
+    font-size: 20px;
+    align-items: left;
+    position: absolute;
+    top: 1;
+    left: 0;
+    transform: translate(25%, 50%);
   }
   
   .fa-typo3 {
     margin-left: 0.5rem;
     font-size: 1.8rem;
   }
-  
-  .nav-menu {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-gap: 10px;
-    list-style: none;
-    text-align: center;
-    width: 60vw;
-    justify-content: end;
-    margin-right: 2rem;
-  }
-  
+
   .nav-item {
     height: 80px;
   }
   
-  .nav-links {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    height: 100%;
-  }
-  
-  .nav-links:hover {
-    border-bottom: 4px solid #fff;
-    transition: all 0.2s ease-out;
-  }
-  
   .fa-bars {
-    color: #fff;
+    color: #000;
   }
   
-  .nav-links-mobile {
-    display: none;
+  .NavbarItems {
+    position: relative;
   }
-  
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: #fff;
+    width: 400px;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .social-links{
+    display: inline-block;
+    justify-content:center;
+    align-items: center;
+    padding-left: 50px;
+    padding-top:300px;
+    margin-left:5px;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .nav-links:hover {
+    color: #000;
+    border-radius: 0;
+  }
+
   .menu-icon {
-    display: none;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: #000;
+    font-size: 2rem;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #fff;
+    padding: 14px 20px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-out;
+  }
+
+  .nav-links-mobile:hover {
+    background: #fff;
+    color: #000;
+    transition: 250ms;
   }
   
   @media screen and (max-width: 960px) {
@@ -84,7 +140,6 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 90vh;
       position: absolute;
       top: 80px;
       left: -100%;
@@ -93,7 +148,7 @@
     }
   
     .nav-menu.active {
-      background: #242222;
+      background: #fff;
       left: 0;
       opacity: 1;
       transition: all 0.5s ease;
@@ -109,13 +164,14 @@
   
     .nav-links:hover {
       background-color: #fff;
-      color: #242424;
+      color: #000;
+      /* text-decoration: underline 1px sold #000; */
       border-radius: 0;
     }
   
     .navbar-logo {
       position: absolute;
-      top: 0;
+      top: 1;
       left: 0;
       transform: translate(25%, 50%);
     }
@@ -131,7 +187,7 @@
     }
   
     .fa-times {
-      color: #fff;
+      color: #000;
       font-size: 2rem;
     }
   
@@ -152,7 +208,18 @@
   
     .nav-links-mobile:hover {
       background: #fff;
-      color: #242424;
+      color: #fff;
       transition: 250ms;
+    }
+
+    .social-links{
+      display: inline-block;
+      justify-content:center;
+      align-items: center;
+      padding-left: 50px;
+      padding-top:365px;
+      margin-left:5px;
+      margin-right: auto;
+      text-align: center;
     }
   }
