@@ -23,12 +23,13 @@ export const Button =({
         : SIZES[0];
 
         return(
-            <Link to='/contact' className='btn-mobile'>
+            
                 <button className={`btn ${checkButtonStyle} ${checkButtonSize}`}
                 onClick={onClick}
                 type={type}>
                     {children}
                 </button>
-            </Link>
+           
+           
         )
     }

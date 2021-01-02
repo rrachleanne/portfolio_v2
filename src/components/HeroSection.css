@@ -57,6 +57,7 @@ video {
     margin-top: 5px;
     color: #fff;
     font-size: 25px;  
+    letter-spacing: 5px;
     padding-left: 490px;
     font-family: 'Montserrat', sans-serif;
   }
@@ -77,7 +78,7 @@ video {
   
   @media screen and (max-width: 1024px) {
     .slider > h1 {
-      font-size: 350px;
+      font-size: 340px;
       margin-top: -150px;
       text-align: center;    
     }
@@ -92,13 +93,16 @@ video {
       
     }
     .slider > h2 {
-      font-size: 100px;
-      padding-left: 150px;
+      font-size: 70px;
+      padding-left: 240px;
     }
     .slider > h3 {
-      font-size: 50px;
-      padding-left: 340px;
+      font-size: 30px;
+      letter-spacing: 8.5px;
+      padding-left: 236px;
     }
+
+   
     .hero-container {
       /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
       flex-direction: column;
@@ -112,24 +116,26 @@ video {
     }
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 540px) {
     .slider > h1 {
-      font-size: 130px;
+      font-size: 110px;
       margin-top: 20px; 
       padding-left: 0px;
       text-align: center; 
       }
     .slider > h2 {
-      font-size: 30px;
+      font-size: 32px;
       padding-left: 0px;
       text-align: right;
       text-align: center; 
     }
     .slider > h3 {
-      font-size: 20px;
+      font-size: 18px;
       padding-left: 0px;
+      letter-spacing: 1.8px;
       text-align: center; 
     }
+   
   
     .hero-container > p {
       font-size: 30px;
@@ -145,8 +151,9 @@ video {
     }
   
     .btn {
-      width: 100%;
+      width: 10%;
     }
+
     
 
     .slider{
@@ -185,6 +192,8 @@ video {
     }
     .slider{
       text-align: center;
+      padding-left: 5px;
+      padding-right: 18px;
     }
     
   }

@@ -3,6 +3,7 @@ import '../App.css'
 import { Button } from './Button'
 import './HeroSection.css'
 import Footer from './Footer'
+import { Link } from 'react-router-dom';
 
 
 function HeroSection() {
@@ -16,19 +17,22 @@ function HeroSection() {
 
           
             <div className="hero-btns">
-                <Button 
+               <Link to='/portfolio'><Button 
                 className='btns' 
                 buttonStyle='btn--outline'
                 buttonSize='btn--large'>
-                    Button Name 1
+                    View Portfolio
                 </Button>
+                </Link> 
 
-                <Button 
+              <Link to='/contact'><Button 
                 className='btns' 
                 buttonStyle='btn--primary'
                 buttonSize='btn--large'>
-                    Button Name 2
+                    Let's Connect
                 </Button>
+                </Link>
+               
             </div>
             
             </div>

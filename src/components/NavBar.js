@@ -35,7 +35,7 @@ function NavBar() {
         <nav className="navbar">
            <div className="navbar-container">
               <Link to='/' className="navbar-logo" onClick={closeMobileMenu}>
-             RW
+            rlW.
               </Link> 
               {/* calls function to handle the click */}
               <div className='menu-icon' onClick={handleClick}>
@@ -53,16 +53,23 @@ function NavBar() {
                     </Link>
                 </li>
                 <li className='nav-item'>
+                    <Link to="/about" className='nav-links' onClick={closeMobileMenu}>
+                    <i class="fas fa-hat-wizard"></i>  About
+                    </Link>
+                    
+                </li>
+                  <li className='nav-item'>
+                    <Link to="/skills" className='nav-links' onClick={closeMobileMenu}>
+                    <i class="fas fa-magic"></i>  Skills
+                    </Link>
+                    
+                </li>
+                <li className='nav-item'>
                     <Link to="/portfolio" className='nav-links' onClick={closeMobileMenu}>
                     <i class="fas fa-code"> </i>  Portfolio
                     </Link>
                 </li>
-                <li className='nav-item'>
-                    <Link to="/about" className='nav-links' onClick={closeMobileMenu}>
-                    <i class="fas fa-user"> </i>  About
-                    </Link>
-                    
-                </li>
+              
                 <li className='nav-item'>
                     <Link to="/contact" className='nav-links' onClick={closeMobileMenu}>
                     <i class="fas fa-at"> </i>  Contact
@@ -87,6 +94,7 @@ function NavBar() {
                 </li>
                
               </ul>
+              
               </div>
             
            </div>
