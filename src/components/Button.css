@@ -9,13 +9,14 @@
     outline: none;
     border: none;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .btn--primary{
     background-color: var(--primary);
     color: #000;
     border: 1px solid var(--primary);
-
+    font-family: 'Montserrat', sans-serif;
 }
 
 .btn--outline{
@@ -24,22 +25,26 @@
     padding: 8px 20px;
     border: 1px solid var(--primary);
     transition: all 0.3s ease-out;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
 .btn--medium{
     padding: 8px 20px;
     font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .btn--large{
     padding: 12px 26px;
     font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .btn--medium:hover, .btn--large:hover{
     background: #fff;
     color: #242424;
     transition: all 0.3s ease-out;
+    font-family: 'Montserrat', sans-serif;
 
 }

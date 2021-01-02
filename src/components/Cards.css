@@ -5,6 +5,7 @@
   
   h1 {
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
   }
   
   .cards__container {
@@ -14,6 +15,7 @@
     max-width: 1120px;
     width: 90%;
     margin: 0 auto;
+    
   }
   
   .cards__wrapper {
@@ -23,6 +25,7 @@
   
   .cards__items {
     margin-bottom: 24px;
+    
   }
   
   .cards__item {
@@ -30,6 +33,7 @@
     flex: 1;
     margin: 0 1rem;
     border-radius: 10px;
+    
   }
   
   .cards__item__link {
@@ -42,6 +46,7 @@
     border-radius: 10px;
     overflow: hidden;
     text-decoration: none;
+    
   }
   
   .cards__item__pic-wrap {
@@ -69,6 +74,7 @@
     color: #fff;
     background-color: #1f98f4;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
   }
   
   .cards__item__img {
@@ -99,7 +105,10 @@
     color: #252e48;
     font-size: 18px;
     line-height: 24px;
+    font-family: 'Montserrat', sans-serif;
   }
+
+  
   
   @media only screen and (min-width: 1200px) {
     .content__blog__container {

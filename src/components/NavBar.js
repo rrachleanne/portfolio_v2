@@ -35,7 +35,7 @@ function NavBar() {
         <nav className="navbar">
            <div className="navbar-container">
               <Link to='/' className="navbar-logo" onClick={closeMobileMenu}>
-             Rachel Williams
+             RW
               </Link> 
               {/* calls function to handle the click */}
               <div className='menu-icon' onClick={handleClick}>
@@ -49,23 +49,23 @@ function NavBar() {
               <ul id="list">
                 <li className='nav-item'>
                     <Link to="/" className='nav-links' onClick={closeMobileMenu}>
-                    <i class="fas fa-campground"> Home</i> 
+                    <i class="fas fa-campground"></i>  Home
                     </Link>
                 </li>
                 <li className='nav-item'>
                     <Link to="/portfolio" className='nav-links' onClick={closeMobileMenu}>
-                    <i class="fas fa-code"> Portfolio</i>
+                    <i class="fas fa-code"> </i>  Portfolio
                     </Link>
                 </li>
                 <li className='nav-item'>
                     <Link to="/about" className='nav-links' onClick={closeMobileMenu}>
-                    <i class="fas fa-user"> About</i>
+                    <i class="fas fa-user"> </i>  About
                     </Link>
                     
                 </li>
                 <li className='nav-item'>
                     <Link to="/contact" className='nav-links' onClick={closeMobileMenu}>
-                    <i class="fas fa-at"> Contact</i>
+                    <i class="fas fa-at"> </i>  Contact
                     </Link>
                 </li>
                 <li className='social-item'>
