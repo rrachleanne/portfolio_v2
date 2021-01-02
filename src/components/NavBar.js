@@ -4,6 +4,7 @@ import './NavBar.css'
 import { Button } from './Button'
 
 
+
 function NavBar() {
     // set state > update the state to change whatever it was to what you want it to be. 
     const [click, setClick] = useState(false)
@@ -42,26 +43,29 @@ function NavBar() {
                       <i className={click ?  'fas fa-times' :  'fas fa-bars'} />
               </div>
               {/* if else show menu */}
-              <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+              <div className={click ? 'nav-menu active' : 'nav-menu'}>
+              {/* IMAGE TO GO HERE */}
+              <img className='profile-pic' src='images/me.png' text='me' label='portfolio-picture'></img>
+              <ul id="list">
                 <li className='nav-item'>
                     <Link to="/" className='nav-links' onClick={closeMobileMenu}>
-                        Home
+                    <i class="fas fa-campground"> Home</i> 
                     </Link>
                 </li>
                 <li className='nav-item'>
                     <Link to="/portfolio" className='nav-links' onClick={closeMobileMenu}>
-                        Portfolio
+                    <i class="fas fa-code"> Portfolio</i>
                     </Link>
                 </li>
                 <li className='nav-item'>
                     <Link to="/about" className='nav-links' onClick={closeMobileMenu}>
-                        About
+                    <i class="fas fa-user"> About</i>
                     </Link>
                     
                 </li>
                 <li className='nav-item'>
                     <Link to="/contact" className='nav-links' onClick={closeMobileMenu}>
-                        Contact
+                    <i class="fas fa-at"> Contact</i>
                     </Link>
                 </li>
                 <li className='social-item'>
@@ -83,6 +87,7 @@ function NavBar() {
                 </li>
                
               </ul>
+              </div>
             
            </div>
 

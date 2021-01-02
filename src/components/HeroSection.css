@@ -11,52 +11,56 @@ video {
     height: 100vh;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* flex-direction: column; */
+    flex-direction: row-reverse;
+    padding-right: 25px;
+    justify-content: right;
     align-items: center;
-    
+    background-image: linear-gradient(to bottom right, rgba(253, 252, 253, 0) , rgba(78, 173, 165, 0.658)80%);
     object-fit: contain;
   }
 
   .slider > h1 {
   color: #000;
-  font-size: 100px;
+  text-shadow: 2px -1px 0 #000, 13px 1px 0 #fff, -1px 5px 0 #000, 1px 0px 0 #fff;
+  font-size: 280px;
   margin-top: -100px;
-  justify-content: center;
-  
+  text-align: right;  
   }
 
   .slider{
-  text-align: center;
   animation-name: animation;
   animation-duration: 2s;
   animation-iteration-count: none;
-  
+
   }
   @keyframes animation {
      from{
-      margin-top: 300%; 
+      margin-right: -70%; 
     }
     to {
-      margin-top: 0%; 
+      margin-right: 0%; 
     }
   }
 
   .slider > h2 {
     margin-top: 5px;
-    color: #000;
-    font-size: 32px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;  
+    color: #fff;
+    font-size: 52px;
+    padding-left: 490px;
+  }
+
+  .slider > h3 {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 25px;  
+    padding-left: 490px;
   }
  
  
-  
- 
-
-  
   .hero-btns {
     margin-top: 32px;
+    padding-left: 490px;
   }
   
   .hero-btns .btn {
@@ -67,17 +71,52 @@ video {
     margin-left: 4px;
   }
   
-  @media screen and (max-width: 960px) {
-    .hero-container > h1 {
-      font-size: 70px;
+  @media screen and (max-width: 1024px) {
+    .slider > h1 {
+      font-size: 350px;
       margin-top: -150px;
+      text-align: center;    
+    }
+    video {
+      object-fit: cover;
+      top: 0;
+      padding-left:250px;
+      width: 250%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+      
+    }
+    .slider > h2 {
+      font-size: 100px;
+    }
+    .slider > h3 {
+      font-size: 40px;
+    }
+    .hero-container {
+      /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
+      flex-direction: column;
+      padding-right: 0px;
+      justify-content: center;
+      align-items: center;
+   
+    }
+    .slider{
+      text-align: center;
     }
   }
   
   @media screen and (max-width: 768px) {
     .slider > h1 {
-      font-size: 80px;
-      
+      font-size: 120px;
+      margin-top: -80px;  
+      text-align: center;    
+    }
+    .slider > h2 {
+      font-size: 50px;
+    }
+    .slider > h3 {
+      font-size: 20px;
     }
   
     .hero-container > p {
@@ -94,6 +133,29 @@ video {
     }
     .slider{
       width: 280px;
+    }
+
+    video {
+      object-fit: cover;
+      top: 0;
+      padding-left:250px;
+      width: 350%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+      
+    }
+
+    .hero-container {
+      /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
+      flex-direction: column;
+      padding-right: 0px;
+      justify-content: center;
+      align-items: center;
+   
+    }
+    .slider{
+      text-align: center;
     }
     
   }

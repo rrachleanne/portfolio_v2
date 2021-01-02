@@ -1,6 +1,6 @@
 .navbar {
-    /* background-color: red; */
-    height: 80px;
+    /* height @ 0px to make transparent */
+    height: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,69 +9,189 @@
     position: sticky;
     top: 0;
     z-index: 999;
-  }
-
-  
-  .navbar-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    max-width: 1500px;
     background-color: transparent;
-    
-  }
-  
-  .navbar-logo {
-    color: #000;
-    justify-self: start;
-    margin-left: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 20px;
-    align-items: left;
-    position: absolute;
-    top: 1;
-    left: 0;
-    transform: translate(25%, 50%);
-    padding: 10px;
-    box-shadow: 5px 10px #888888;
-  }
-  
-  .fa-typo3 {
-    margin-left: 0.5rem;
-    font-size: 1.8rem;
   }
 
-  .nav-item {
-    height: 80px;
-  }
   
-  .fa-bars {
-    color: #000;
-  }
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  max-width: 1500px;
+  /* background-color: rgba(255,255,255,0.5);
+  box-shadow: 5px 10px #888888 */
+}
   
+.navbar-logo {
+  color: #000;
+  justify-self: start;
+  margin-left: 10px;
+  padding-top: 40px; 
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 20px;
+  align-items: left;
+  position: absolute;
+  top: 1;
+  left: 0;
+  transform: translate(25%, 50%);
+  /* box-shadow: 5px 10px #888888; */
+}
+  
+.fa-typo3 {
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.nav-item {
+  height: 80px;
+}
+
+.fa-bars {
+  color: #000;
+}
+
+.NavbarItems {
+  position: relative;
+}
+
+.nav-menu {
+  background-color: white;
+  /* display: flex;
+  flex-direction: column; */
+  width: 50%;
+  /* Height of pop out menu */
+  height: 99vh;
+  position: absolute;
+  top: 0px;
+  left: -100%;
+  opacity: 10;
+  transition: all 0.5s ease;
+}
+
+/* To remove dot point styling on menu items */
+#list li{
+  list-style-type: none;
+}
+
+/* styling for menu popup */
+.nav-menu.active {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  background-color: #fff;
+  /* width of popout menu when active */
+  width: 400px;
+  left: 0;
+  opacity: 1;
+  transition: all 0.5s ease;
+  /* z-index: 1;
+  menu you border and shading */
+  /* border: 1px solid; */
+  padding-top: 80px;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.nav-links {
+  text-align: left;
+  padding: 2rem;
+  width: 100%;
+  display: table;
+  letter-spacing: 2px; 
+  font-size: 25px;
+}
+
+.social-links{
+  display: inline-block;
+  justify-content:center;
+  align-items: center;
+  padding-left: 50px;
+  padding-top:210px;
+  margin-left:5px;
+  margin-right: auto;
+  text-align: center;
+  color: #000
+}
+
+.fab:hover{
+  font-size: 25px;
+}
+.fab:visited{
+  color: #000;
+}
+
+.nav-links:hover {
+  color: #000;
+  border-radius: 0;
+  font-size: 30px;
+}
+.nav-links:visited {
+  color: #000;
+  border-radius: 0;
+}
+
+.menu-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-100%, 60%);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.fa-times {
+  color: #000;
+  font-size: 2rem;
+}
+
+.nav-links-mobile {
+  display: block;
+  text-align: center;
+  margin: 2rem auto;
+  border-radius: 0px;
+  width: 80%;
+  text-decoration: none;
+  font-size: 1.5rem;
+  background-color: #fff;
+  color: #000;
+  padding: 14px 20px;
+  transition: all 0.3s ease-out;
+}
+
+.nav-links-mobile:hover {
+  background: #fff;
+  color: #000;
+  transition: 250ms;
+}
+
+.profile-pic{
+  border-radius: 50%;
+  width: 100px;
+  margin-left: 140px;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+/* iPad styling */
+@media screen and (max-width: 1024px) {
   .NavbarItems {
     position: relative;
   }
 
   .nav-menu {
-    background-color: white;
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 90vh;
+    width: 100%;
+    height: 100vh;
     position: absolute;
-    top: 80px;
+    top: 0px;
     left: -100%;
-    opacity: 10;
+    opacity: 1;
     transition: all 0.5s ease;
   }
+  
 
-/* styling for menu popup */
   .nav-menu.active {
-    background: white;
-    width: 400px;
+    background: #fff;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -79,26 +199,34 @@
   }
 
   .nav-links {
-    text-align: center;
-    padding: 2rem;
+    padding-top: 4rem;
     width: 100%;
     display: table;
   }
 
-  .social-links{
-    display: inline-block;
-    justify-content:center;
-    align-items: center;
-    padding-left: 50px;
-    padding-top:300px;
-    margin-left:5px;
-    margin-right: auto;
-    text-align: center;
+  .fab:hover{
+    font-size: 25px;
   }
-
+  .fab:visited{
+    color: #000;
+  }
+  
   .nav-links:hover {
     color: #000;
     border-radius: 0;
+    font-size: 30px;
+  }
+  .nav-links:visited {
+    color: #000;
+    border-radius: 0;
+  }
+  
+
+  .navbar-logo {
+    position: absolute;
+    top: 1;
+    left: 0;
+    transform: translate(25%, 50%);
   }
 
   .menu-icon {
@@ -106,6 +234,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    margin-right: 30px;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
@@ -120,10 +249,9 @@
     display: block;
     text-align: center;
     margin: 2rem auto;
-    border-radius: 0px;
     width: 80%;
     text-decoration: none;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     background-color: #fff;
     color: #000;
     padding: 14px 20px;
@@ -132,98 +260,134 @@
 
   .nav-links-mobile:hover {
     background: #fff;
-    color: #000;
+    color: #fff;
     transition: 250ms;
   }
-  
-  @media screen and (max-width: 960px) {
-    .NavbarItems {
-      position: relative;
-    }
-  
-    .nav-menu {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      position: absolute;
-      top: 80px;
-      left: -100%;
-      opacity: 1;
-      transition: all 0.5s ease;
-    }
-  
-    .nav-menu.active {
-      background: #fff;
-      left: 0;
-      opacity: 1;
-      transition: all 0.5s ease;
-      z-index: 1;
-    }
-  
-    .nav-links {
-      text-align: center;
-      padding: 2rem;
-      width: 100%;
-      display: table;
-    }
-  
-    .nav-links:hover {
-      background-color: #fff;
-      color: #000;
-      /* text-decoration: underline 1px sold #000; */
-      border-radius: 0;
-    }
-  
-    .navbar-logo {
-      position: absolute;
-      top: 1;
-      left: 0;
-      transform: translate(25%, 50%);
-    }
-  
-    .menu-icon {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      transform: translate(-100%, 60%);
-      font-size: 1.8rem;
-      cursor: pointer;
-    }
-  
-    .fa-times {
-      color: #000;
-      font-size: 2rem;
-    }
-  
-    .nav-links-mobile {
-      display: block;
-      text-align: center;
-      margin: 2rem auto;
-     
-      width: 80%;
-      text-decoration: none;
-      font-size: 1.5rem;
-      background-color: #fff;
-      color: #fff;
-      padding: 14px 20px;
-      transition: all 0.3s ease-out;
-    }
-  
-    .nav-links-mobile:hover {
-      background: #fff;
-      color: #fff;
-      transition: 250ms;
-    }
 
-    .social-links{
-      display: inline-block;
-      justify-content:center;
-      align-items: center;
-      padding-left: 50px;
-      padding-top:365px;
-      margin-left:5px;
-      margin-right: auto;
-      text-align: center;
-    }
+  .social-links{
+    display: inline-block;
+    justify-content:center;
+    align-items: center;
+    padding-left: 50px;
+    padding-top:765px;
+    margin-left:5px;
+    margin-right: auto;
+    text-align: center;
   }
+
+  .profile-pic{
+    border-radius: 50%;
+    width: 100px;
+    margin-left: 140px;
+    box-shadow: 5px 10px 8px #888888;
+  }
+}
+/* 
+iphone styling */
+@media screen and (max-width: 390px) {
+  .NavbarItems {
+    position: relative;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: #fff;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    width: 250px;
+    
+  }
+
+  .profile-pic{
+    border-radius: 50%;
+    width: 100px;
+    margin-left: 78px;
+    box-shadow: 5px 10px 8px #888888;
+  }
+
+  .nav-links {
+    text-align: left;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background-color: #fff;
+    color: #000;
+    /* text-decoration: underline 1px sold #000; */
+    border-radius: 0;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 1;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 15px;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: #000;
+    font-size: 2rem;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: #fff;
+    color: #fff;
+    padding: 14px 20px;
+    transition: all 0.3s ease-out;
+  }
+
+  .nav-links-mobile:hover {
+    background: #fff;
+    color: #fff;
+    transition: 250ms;
+  }
+
+  
+
+  .social-links{
+    display: inline-block;
+    justify-content:center;
+    align-items: center;
+    padding-left: 15px;
+    padding-top:210px;
+    margin-left:15px;
+    margin-right: auto;
+    text-align: center;
+    color: #000
+  }
+
+
+}

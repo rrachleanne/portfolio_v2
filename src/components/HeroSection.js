@@ -3,13 +3,15 @@ import '../App.css'
 import { Button } from './Button'
 import './HeroSection.css'
 
+
 function HeroSection() {
     return (
         <div className='hero-container'>
             <video src="/videos/walking-1.mp4" autoPlay loop muted />
         <div className="slider">
-            <h1>Hi, i'm Rachel Williams!</h1>
-            <h2>A Junior Full Stack Developer</h2>
+            <h1>Hello!</h1>
+            <h2>I'm Rachel Williams</h2>
+            <h3>A Junior Full Stack Developer</h3>
 
           
             <div className="hero-btns">
