@@ -1,0 +1,32 @@
+h3{
+    margin-top: 5px;
+    color: #fff;
+    font-size: 25px;  
+    letter-spacing: 4.5px;
+    padding-left: 451px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.far{
+    color: transparent;
+}
+
+@media screen and (max-width: 1024px) {
+    h3 {
+        font-size: 30px;
+        letter-spacing: 8.5px;
+        padding-left: 207px;
+        text-align: left;
+      }
+}
+
+@media screen and (max-width: 540px) {
+
+   h3 {
+        font-size: 20px;
+        padding-left: 0px;
+        letter-spacing: 1px;
+        text-align: left; 
+      }
+}
+

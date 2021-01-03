@@ -16,7 +16,7 @@ video {
     padding-right: 25px;
     justify-content: right;
     align-items: center;
-    background-image: linear-gradient(to bottom right, rgba(10, 122, 113, 0.691) , rgba(96, 184, 176, 0.658)80%);
+    background-image: linear-gradient(to bottom right, rgba(10, 122, 113, 0.691) , rgba(155, 172, 125, 0.658)80%);
     object-fit: contain;
     
   }

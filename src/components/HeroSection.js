@@ -4,7 +4,7 @@ import { Button } from './Button'
 import './HeroSection.css'
 import Footer from './Footer'
 import { Link } from 'react-router-dom';
-
+import Animation from './Animation'
 
 function HeroSection() {
     return (
@@ -13,7 +13,8 @@ function HeroSection() {
         <div className="slider">
             <h1>Hello!</h1>
             <h2>I'm Rachel Williams</h2>
-            <h3>A Junior Full Stack Developer</h3>
+            <Animation/>
+           
 
           
             <div className="hero-btns">
