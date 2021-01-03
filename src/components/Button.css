@@ -28,6 +28,20 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.btn--dark{
+    background-color: transparent ;
+    color: #60b8b0;
+    padding: 8px 20px;
+    border: 1px solid #60b8b0;
+    transition: all 0.3s ease-out;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn--sml{
+    padding: 4px 12px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
 
 .btn--medium{
     padding: 8px 20px;
