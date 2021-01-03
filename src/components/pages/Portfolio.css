@@ -15,6 +15,23 @@
     max-width: 1120px;
     width: 90%;
     margin: 0 auto;
+    padding-top: 40px;
+    
+  }
+
+  .portfolio-underline{
+    width: 673px;
+    height: 8px;
+    background-color: #60b8b0;
+    position: relative;
+    animation-name: portfolio;
+    animation-duration: 4s;
+    animation-delay: -2s;
+  }
+
+  @keyframes portfolio {
+    0%  {background-color:#60b8b0;width:0px; height:8px; left:7px; top:0px;}
+    100% {background-color:#60b8b0;width:673px;height:8px;  left:0px; top:0px;}
     
   }
   

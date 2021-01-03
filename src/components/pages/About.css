@@ -67,12 +67,12 @@ video {
     height: 8px;
     background-color: #60b8b0;
     position: relative;
-    animation-name: example;
+    animation-name: about;
     animation-duration: 4s;
     animation-delay: -2s;
   }
 
-  @keyframes example {
+  @keyframes about {
     /* 0%   {background-color:red; left:0px; top:0px;}
     25%  {background-color:yellow; left:200px; top:0px;} */
     0%  {background-color:#60b8b0;width:15px; height:8px; left:300px; top:0px;}

@@ -5,23 +5,36 @@ import SkillBar from 'react-skillbars'
 const skills =[
     {
         "type": "CSS",
+        "level": 75
+      },
+      {
+        "type": "Git",
         "level": 80
       },
       {
         "type": "HTML",
-        "level": 80
-      },
-      {
-        "type": "JavaScript",
         "level": 70
       },
       {
+        "type": "JavaScript",
+        "level": 60
+      }, 
+      {
+        "type": "MongoDB",
+        "level": 20
+      }
+      ,
+      {
+        "type": "Node.js",
+        "level": 40
+      },
+      {
         "type": "React",
-        "level": 75
+        "level": 65
       },
       {
         "type": "Ruby/Rails",
-        "level": 50
+        "level": 40
       }
     ]
 const colors = {

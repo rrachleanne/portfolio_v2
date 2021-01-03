@@ -24,24 +24,38 @@ h1{
       height:500px;
       width:950px;
       padding: 50px;
-      font-size: 100px;
       color:#60b8b0;
       font-family: 'Montserrat', sans-serif;
 
   }
 
+
+.other-skills{
+ font-size: 10px;  
+ flex-direction: column;
+ letter-spacing: 5px; 
+ text-align: center;
+
+ 
+}
+  .icons{
+      align-items: center;
+      text-align: center;
+      font-size: 100px;
+     
+  }
   .icons>img{
-      width:87px;
+      width:84px;
+      padding-right: 20px;
       
   }
 
   .fab{
-    padding-right: 80px;
+    padding-right: 38.5px;
+    height: 2px;
+  }
+  .fa-css3-alt{
+      padding-left:20px;
   }
 
-  #skills-list li{
-    list-style-type: none;
-    font-size: 15px;
-    letter-spacing: 1.8px;
-    color: #000;
-  }
+ 

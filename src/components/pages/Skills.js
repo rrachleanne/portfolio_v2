@@ -12,30 +12,12 @@ function Skills() {
             <div className='skills-box'>
         <ProgressBar/>
         <div className='icons'>
-        <i class="fab fa-css3-alt"></i> <i class="fab fa-html5"></i> <i class="fab fa-js-square"></i> <i class="fab fa-react"></i> <img src='/images/ruby.png'></img>
+        <i class="fab fa-css3-alt fa-xs"></i><i class="fab fa-html5 fa-xs"></i><i class="fab fa-js-square fa-xs"></i><i class="fab fa-react fa-xs"></i><i class="fab fa-node fa-xs"></i><i class="fab fa-git-alt fa-xs"></i><img src='/images/ruby.png'></img><img src='/images/mongodb.png'></img>
         </div>
-        
-        <ul id='skills-list'>
-            <li>
-            React
-            </li>
-            <li>
-            Ruby on Rails
-            </li>
-            <li>
-            Node
-            </li>
-            <li>
-            MongoDB
-            </li>
-            <li>
-            Express
-            </li>
-            <li>
-            Git
-            </li>
-        
-        </ul>
+        <div className='other-skills'>
+            Leadership  <i class="fas fa-circle fa-xs"></i>  8 years Management  <i class="fas fa-circle fa-xs"></i>  Cloud Computing  <i class="fas fa-circle fa-xs"></i>  Training Software Documentation  <i class="fas fa-circle fa-xs"></i>  Business Planning/Strategy  <i class="fas fa-circle fa-xs"></i>  Customer Relationship Management  <i class="fas fa-circle fa-xs"></i>  Sales and Marketing
+        </div>
+
          </div>
         </div>
     )
