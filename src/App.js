@@ -7,6 +7,10 @@ import Portfolio from './components/pages/Portfolio'
 import About from './components/pages/About'
 import Contact from './components/pages/Contact'
 import Skills from './components/pages/Skills'
+import ParQueen from './components/pages/sub-pages/Parqueen'
+import Checkmate from './components/pages/sub-pages/Checkmate'
+import KeyboardWarrior from './components/pages/sub-pages/KeyboardWarrior'
+import HtmlPortfolio from './components/pages/sub-pages/HtmlPortfolio'
 
 function App() {
   return (
@@ -19,6 +23,10 @@ function App() {
           <Route path='/portfolio' exact component= {Portfolio}/>
           <Route path='/skills' exact component= {Skills}/>
           <Route path='/contact' exact component= {Contact}/>
+          <Route path='/parqueen' exact component= {ParQueen}/>
+          <Route path='/checkmate' exact component= {Checkmate}/>
+          <Route path='/keyboardwarrior' exact component= {KeyboardWarrior}/>
+          <Route path='/html-portfolio' exact component= {HtmlPortfolio}/>
         </Switch>
       </Router>
     </>

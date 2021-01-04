@@ -1,8 +1,7 @@
-.about-container>img{
-    width: 350px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
+.parqueen-container>img{
+    width: 650px;
+    
+
 }
 
 video {
@@ -13,23 +12,23 @@ video {
     z-index: -1;
   }
 
-  .about-container {
+  .parqueen-container {
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding-left: 16.5%;
+    padding-left: 5%;
     justify-content: left;
     align-items: center;
     object-fit: contain;
     background-image: linear-gradient(to bottom right, rgb(255, 255, 255) , rgba(255, 255, 255, 0.753)80%);
   }
 
-  .intro{
+  .parqueen-intro{
       margin-left:30px;
   }
 
-  .intro > h1 {
+  .parqueen-intro > h1 {
   color: #000;
   font-size: 37.5px;
   margin-top: -7px;
@@ -37,49 +36,58 @@ video {
   font-family: 'Montserrat', sans-serif;
   }
 
-  .sub-heading{
+  .parqueen-sub-heading{
     font-size: 12px;
     font-family: 'Montserrat', sans-serif;
   }
 
-  .about-bio{
+  .parqueen-bio{
     margin-right:220px;  
     
     
   }
-.about-bio > p{
+.parqueen-bio > p{
     margin-top:20px; 
     font-size: 15px;
     letter-spacing: 1.8px;
     text-align: justify;
 }
-  #about-list li{
+  #parqueen-list li{
     list-style-type: none;
     font-size: 15px;
     letter-spacing: 1.8px;
     color: #60b8b0;
+    display: inline-block;
+    
+    
   }
 
-  .about-btns{
+  .parqueen-btns{
     padding-top: 28px;
+    
+  }
+  .parqueen-btns .btn {
+    margin-right: 6px;
   }
 
-  .about-underline{
-    width: 510px;
+  .parqueen-underline{
+    width: 415px;
     height: 8px;
     background-color: #60b8b0;
     position: relative;
-    animation-name: about;
+    animation-name: parqueen;
     animation-duration: 4s;
     animation-delay: -2s;
   }
 
-  @keyframes about {
+  @keyframes parqueen {
     /* 0%   {background-color:red; left:0px; top:0px;}
     25%  {background-color:yellow; left:200px; top:0px;} */
     0%  {background-color:#60b8b0;width:15px; height:8px; left:300px; top:0px;}
     /* 75%  {background-color:green; left:0px; top:200px;} */
-    100% {background-color:#60b8b0;width:510px;height:8px;  left:0px; top:0px;}
+    100% {background-color:#60b8b0;width:415px;height:8px;  left:0px; top:0px;}
     
   }
+  
+  
   
