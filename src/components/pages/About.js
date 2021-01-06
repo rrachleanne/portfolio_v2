@@ -34,9 +34,16 @@ export default function About() {
                 className='btns' 
                 buttonStyle='btn--dark'
                 buttonSize='btn--sml'>
-                    RESUME
+                    Resume
                 </Button>
-                </Link>
+               </Link>
+               <Link to='/contact' ><Button 
+               className='btns' 
+               buttonStyle='btn--dark'
+               buttonSize='btn--sml'>
+                   Contact
+               </Button>
+               </Link>
                 </div>
             </div>
             
