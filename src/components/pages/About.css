@@ -1,8 +1,9 @@
+/* LARGE SCREEN CSS */
 .about-container>img{
     width: 350px;
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
+
 }
 
 video {
@@ -18,24 +19,26 @@ video {
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding-left: 16.5%;
+    padding-left: 18.5%;
+    padding-top: 10%;
     justify-content: left;
-    align-items: center;
+    align-items: flex-start;
     object-fit: contain;
     background-image: linear-gradient(to bottom right, rgb(255, 255, 255) , rgba(255, 255, 255, 0.753)80%);
   }
 
   .intro{
-      margin-left:30px;
+    margin-left:30px;
   }
 
   .intro > h1 {
-  color: #000;
-  font-size: 37.5px;
-  margin-top: -7px;
-  text-align: left;  
-  font-family: 'Montserrat', sans-serif;
-  }
+    color: #000;
+    font-size: 37.5px;
+    margin-top: -7px;
+    text-align: left;  
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.5px;
+    }
 
   .sub-heading{
     font-size: 12px;
@@ -43,34 +46,35 @@ video {
   }
 
   .about-bio{
-    margin-right:220px;  
-    
-    
+    margin-right:330px;      
   }
+
 .about-bio > p{
     margin-top:20px; 
-    font-size: 15px;
-    letter-spacing: 1.8px;
+    font-size: 12px;
+    letter-spacing: 0px;
     text-align: justify;
+    line-height: 20px;
 }
-  #about-list li{
+
+  #about-list li {
     list-style-type: none;
-    font-size: 15px;
-    letter-spacing: 1.8px;
+    font-size: 12px;
+    letter-spacing: 0px;
     color: #60b8b0;
+    line-height: 20px;
   }
 
   .about-btns{
     padding-top: 28px;
   }
 
- 
   .about-btns .btn {
     margin-right: 6px;
   }
 
   .about-underline{
-    width: 510px;
+    width: 542px;
     height: 8px;
     background-color: #60b8b0;
     position: relative;
@@ -84,7 +88,7 @@ video {
     25%  {background-color:yellow; left:200px; top:0px;} */
     0%  {background-color:#60b8b0;width:15px; height:8px; left:300px; top:0px;}
     /* 75%  {background-color:green; left:0px; top:200px;} */
-    100% {background-color:#60b8b0;width:510px;height:8px;  left:0px; top:0px;}
+    100% {background-color:#60b8b0;width:542;height:8px;  left:0px; top:0px;}
     
   }
   

@@ -1,5 +1,5 @@
 .contact-container>img{
-    width: 650px;
+    width: 500px;
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
@@ -19,9 +19,10 @@ video {
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding-left: 5%;
+    padding-left: 15%;
+    padding-top: 10%;
     justify-content: left;
-    align-items: center;
+    align-items: flex-start;
     object-fit: contain;
     background-image: linear-gradient(to bottom right, rgb(255, 255, 255) , rgba(255, 255, 255, 0.753)80%);
   }
@@ -36,31 +37,33 @@ video {
   margin-top: -7px;
   text-align: left;  
   font-family: 'Montserrat', sans-serif;
-  }
+  letter-spacing: 1.5px;
+}
 
   .contact-sub-heading{
     font-size: 12px;
     font-family: 'Montserrat', sans-serif;
-    padding-bottom: 10px;  
+    
   }
 
   .contact-bio{
-    margin-right:220px;  
+    margin-right:330px;  
   }
 
 
 .contact-bio > p{
     margin-top:20px; 
-    font-size: 15px;
-    letter-spacing: 1.8px;
+    font-size: 12px;
+    letter-spacing: 0px;
     text-align: justify;
+    line-height: 20px;
 }
   #contact-list li{
     list-style-type: none;
-    font-size: 15px;
-    letter-spacing: 1.8px;
+    font-size: 12px;
+    letter-spacing: 0px;
     color: #60b8b0;
-    padding-top: 10px; 
+    
    
   }
 .mail-to{
@@ -92,7 +95,7 @@ video {
  
 
   .contact-underline{
-    width: 255px;
+    width: 275px;
     height: 8px;
     background-color: #60b8b0;
     position: relative;
@@ -106,7 +109,7 @@ video {
     25%  {background-color:yellow; left:200px; top:0px;} */
     0%  {background-color:#60b8b0;width:15px; height:8px; left:300px; top:0px;}
     /* 75%  {background-color:green; left:0px; top:200px;} */
-    100% {background-color:#60b8b0;width:255px;height:8px;  left:0px; top:0px;}
+    100% {background-color:#60b8b0;width:275px;height:8px;  left:0px; top:0px;}
     
   }
   

@@ -10,7 +10,7 @@ function ReactPortfolio() {
        
        <img src="/images/v2portfolio/portfolio.jpg"  />
            <div className="react-portfolio-intro">
-               <h1>React Portfolio V2</h1>
+               <h1>React Website Portfolio</h1>
                 <div className='react-portfolio-underline'></div>
                    <p className='react-portfolio-sub-heading'>Side Project by Rachel WIlliams 2021</p>
                <div className='react-portfolio-bio'>
@@ -50,6 +50,8 @@ function ReactPortfolio() {
                    GitHub Repo
                </Button>
                </Link>
+               <Link to="/portfolio">
+           <i class="fas fa-arrow-circle-left"> back</i></Link>
                </div>
            </div>
            

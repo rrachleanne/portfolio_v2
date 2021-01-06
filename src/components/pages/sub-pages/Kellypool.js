@@ -10,7 +10,7 @@ function Kellypool() {
        
        <img src="/images/ruby/kellypool.png"  />
            <div className="kellypool-intro">
-               <h1>Kellypool Terminal Application</h1>
+               <h1>Kellypool Terminal App</h1>
                 <div className='kellypool-underline'></div>
                    <p className='kellypool-sub-heading'>A Coder Academy T1 Terminal Assignment</p>
                <div className='kellypool-bio'>
@@ -42,6 +42,8 @@ function Kellypool() {
                    GitHub Repo
                </Button>
                </Link>
+               <Link to="/portfolio" className='back-arrow'>
+           <i class="fas fa-arrow-circle-left"> back</i></Link>
                </div>
            </div>
            

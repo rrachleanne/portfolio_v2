@@ -109,11 +109,11 @@
   text-decoration: none;
 }
 
-.social-links{
+.nav-social-links{
   display: inline-block;
   justify-content:center;
   align-items: center;
-  padding-left: 50px;
+  padding-left: 20px;
   padding-top:95px;
   margin-left:5px;
   margin-right: auto;
@@ -291,7 +291,7 @@
     transition: 250ms;
   }
 
-  .social-links{
+  .nav-social-links{
     display: inline-block;
     justify-content:center;
     align-items: center;
@@ -396,7 +396,7 @@ iphone styling */
   }
 
   
-  .social-links{
+  .nav-social-links{
     display: inline-block;
     justify-content:center;
     align-items: center;

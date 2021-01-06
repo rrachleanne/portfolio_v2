@@ -10,7 +10,7 @@ function KeyboardWarrior() {
        
        <img src="/images/keyboardwarrior/keyboardwarrior.jpg"  />
            <div className="keyboardwarrior-intro">
-               <h1>Keyboard Warrior Application</h1>
+               <h1>Keyboard Warrior App</h1>
                 <div className='keyboardwarrior-underline'></div>
                    <p className='keyboardwarrior-sub-heading'>A Coder Academy 2 day Hackathon v1</p>
                <div className='keyboardwarrior-bio'>
@@ -41,6 +41,8 @@ function KeyboardWarrior() {
                    GitHub Repo
                </Button>
                </Link>
+               <Link to="/portfolio" className='back-arrow'>
+           <i class="fas fa-arrow-circle-left"> back</i></Link>
                </div>
            </div>
            

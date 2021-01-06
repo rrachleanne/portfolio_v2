@@ -8,7 +8,7 @@ function ParQueen() {
         <div className='parqueen-container'>
         <video src="/videos/lines-2.mp4" autoPlay loop muted />
        
-       <img src="/images/parqueen/parqueenhm.jpg"  />
+       <img src="/images/parqueen/fullscreen.jpg"  />
            <div className="parqueen-intro">
                <h1>ParQueen Application</h1>
                 <div className='parqueen-underline'></div>
@@ -52,6 +52,8 @@ function ParQueen() {
                    GitHub Repo
                </Button>
                </Link>
+               <Link to="/portfolio">
+           <i class="fas fa-arrow-circle-left"> back</i></Link>
                </div>
            </div>
            

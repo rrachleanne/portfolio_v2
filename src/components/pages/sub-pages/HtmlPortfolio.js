@@ -8,9 +8,9 @@ function HtmlPortfolio() {
         <div className='html-portfolio-container'>
         <video src="/videos/lines-2.mp4" autoPlay loop muted />
        
-       <img src="/images/checkmate/checkmate.jpg"  />
+       <img src="/images/html/htmlsite.jpg"  />
            <div className="checkmate-intro">
-               <h1>HTML Portfolio V1</h1>
+               <h1>HTML Website Portfolio</h1>
                 <div className='html-portfolio-underline'></div>
                    <p className='html-portfolio-sub-heading'>A Coder Academy Assignment</p>
                <div className='html-portfolio-bio'>
@@ -50,6 +50,8 @@ function HtmlPortfolio() {
                    GitHub Repo
                </Button>
                </Link>
+               <Link to="/portfolio">
+           <i class="fas fa-arrow-circle-left"> back</i></Link>
                </div>
            </div>
            

@@ -50,6 +50,8 @@ function Checkmate() {
                    GitHub Repo
                </Button>
                </Link>
+               <Link to="/portfolio">
+           <i class="fas fa-arrow-circle-left"> back</i></Link>
                </div>
            </div>
            

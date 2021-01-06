@@ -75,20 +75,20 @@ function NavBar() {
                     <i class="fas fa-at"> </i>  Contact
                     </Link>
                 </li>
-                <li className='social-item'>
-                <Link to="https://www.facebook.com/rachelleanne.williams" className='social-links' onClick={closeMobileMenu}>
+                <li className='nav-social-item'>
+                <Link to="https://www.facebook.com/rachelleanne.williams" className='nav-social-links' onClick={closeMobileMenu}>
                 <i class='fab fa-facebook-f' />
                     </Link>
-                    <Link to="https://www.instagram.com/rrach_leanne/" className='social-links' onClick={closeMobileMenu}>
+                    <Link to="https://www.instagram.com/rrach_leanne/" className='nav-social-links' onClick={closeMobileMenu}>
                 <i class='fab fa-instagram' />
                     </Link>
-                    <Link to="https://twitter.com/rrach_leanne" className='social-links' onClick={closeMobileMenu}>
+                    <Link to="https://twitter.com/rrach_leanne" className='nav-social-links' onClick={closeMobileMenu}>
                 <i class='fab fa-twitter' />
                     </Link>
-                    <Link to="https://www.linkedin.com/in/rachelleannewilliams/" className='social-links' onClick={closeMobileMenu}>
+                    <Link to="https://www.linkedin.com/in/rachelleannewilliams/" className='nav-social-links' onClick={closeMobileMenu}>
                 <i class='fab fa-linkedin' />
                     </Link>
-                    <Link to="/contact" className='social-links' onClick={closeMobileMenu}>
+                    <Link to="/contact" className='nav-social-links' onClick={closeMobileMenu}>
                 <i class='fab fa-github' />
                     </Link>
                 </li>
