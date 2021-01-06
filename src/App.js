@@ -11,6 +11,8 @@ import ParQueen from './components/pages/sub-pages/Parqueen'
 import Checkmate from './components/pages/sub-pages/Checkmate'
 import KeyboardWarrior from './components/pages/sub-pages/KeyboardWarrior'
 import HtmlPortfolio from './components/pages/sub-pages/HtmlPortfolio'
+import ReactPortfolio from './components/pages/sub-pages/ReactPortfolio'
+import Kellypool from './components/pages/sub-pages/Kellypool'
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
           <Route path='/checkmate' exact component= {Checkmate}/>
           <Route path='/keyboardwarrior' exact component= {KeyboardWarrior}/>
           <Route path='/html-portfolio' exact component= {HtmlPortfolio}/>
+          <Route path='/react-portfolio' exact component= {ReactPortfolio}/>
+          <Route path='/kellypool' exact component= {Kellypool}/>
         </Switch>
       </Router>
     </>

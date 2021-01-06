@@ -28,10 +28,10 @@ function Cards() {
                        src='images/html/htmlsite.jpg' text='V1.Portfolio' label='Html/Css' path='/html-portfolio'
                        />
                         <CardItem
-                       src='/images/v2portfolio/portfolio.jpg' text='V2.Portfolio' label='React/JS' path='/portfolio'
+                       src='/images/v2portfolio/portfolio.jpg' text='V2.Portfolio' label='React/JS' path='/react-portfolio'
                        />
                         <CardItem
-                       src='images/ruby/kellypool.png' text='Kellypool' label='Ruby' path='/portfolio'
+                       src='images/ruby/kellypool.png' text='Kellypool' label='Ruby' path='/kellypool'
                        />                   
                     </ul>
                 </div>
